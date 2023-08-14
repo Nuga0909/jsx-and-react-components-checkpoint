@@ -1,4 +1,4 @@
-const Product = {
+const product = {
   name: "Casio Vintage Wrist Watch",
   price: "₦13,899",
   description:
@@ -7,6 +7,8 @@ const Product = {
     "https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/31/4127612/1.jpg?6951",
 };
 
-const ProductStrf = JSON.stringify(Product);
+const productStrf = JSON.stringify(product);
 
-export default ProductStrf;
+console.log(product["price"]);
+
+export default productStrf;
