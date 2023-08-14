@@ -27,6 +27,7 @@ function App({myName}) {
         </Card.Body>
       </Card>
       <h2>Hello, {(myName)? myName:"there"}!</h2>
+      <img src={(myName)? newImage:''} alt="" />
     </>
   );
 }
