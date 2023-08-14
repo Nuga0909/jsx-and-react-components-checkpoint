@@ -3,11 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Price from "./components/Price";
-import Image from "./components/Image";
+import newImage from "./components/Image";
 import Description from "./components/Description";
 import Name from "./components/Name";
-
-// let myName = 'Adeshina';
 
 function App({myName}) {
   return (
@@ -15,7 +13,7 @@ function App({myName}) {
       <Card style={{ width: "18rem" }}>
         <Card.Img
           variant="top"
-          src={<Image/>}
+          src={newImage}
         />
         <Card.Body>
           <Price />
