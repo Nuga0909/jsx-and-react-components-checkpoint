@@ -7,14 +7,11 @@ import newImage from "./components/Image";
 import Description from "./components/Description";
 import Name from "./components/Name";
 
-function App({myName}) {
+function App({ myName }) {
   return (
     <>
       <Card style={{ width: "18rem" }}>
-        <Card.Img
-          variant="top"
-          src={newImage}
-        />
+        <Card.Img variant="top" src={newImage} />
         <Card.Body>
           <Price />
           <Card.Title>
@@ -26,8 +23,10 @@ function App({myName}) {
           <Button variant="primary">Buy now!</Button>
         </Card.Body>
       </Card>
-      <h2>Hello, {(myName)? myName:"there"}!</h2>
-      <img src={(myName)? newImage:''} alt="" />
+      <div className="bottom">
+        <h2>Hello, {myName ? myName : "there"}!</h2>
+        <img src={myName ? newImage : ""} alt="" className="add-image" />
+      </div>
     </>
   );
 }
