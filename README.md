@@ -1,1 +1,1 @@
-In this checkpoint, we are going to use what we have learned so far to play around with some React components and JSX.
+In this checkpoint, I am going to use what I have learned so far to play around with some React components and JSX.
