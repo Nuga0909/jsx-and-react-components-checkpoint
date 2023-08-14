@@ -1,9 +1,10 @@
 import productStrf from "../product";
 
-const objprice = JSON.parse(productStrf);
+const objImage = JSON.parse(productStrf);
 
 function Image() {
-    return (objprice['imageUrl']);
+    return (`"${objImage['imageUrl']}"`
+    );
 }
 
 export default Image;
